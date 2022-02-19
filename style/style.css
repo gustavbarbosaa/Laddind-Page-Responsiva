@@ -1,0 +1,173 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Poppins:ital,wght@0,300;0,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1200px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #080104;
+    color: white;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0px;
+}
+
+header span {
+    color: #DE340D;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    padding: 0 35px;
+}
+
+#log {
+    margin-right: 10px;
+    padding: 10px 30px;
+    border-radius: 15px;
+    border: 2px solid #DE340D;
+}
+
+#reg {
+    margin-left: 10px;
+    padding: 10px 30px;
+    border-radius: 15px;
+    border: 2px solid #DE340D;
+}
+
+#log:hover, #reg:hover {
+    background-color: #DE340D;
+    color: white;
+}
+
+header a:hover {
+    color: #DE340D;
+    transition-duration: 0.3s;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+aside {
+    width: 50%;
+    line-height: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo {
+    padding-bottom: 25px;
+}
+
+#digital {
+    color: #DE340D;
+}
+
+aside h1 {
+    line-height: 22px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+form input {
+    margin-top: 50px;
+    padding: 10px;
+    height: 45px;
+    font-size: 16px;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    background-color: #de330d81;
+    color: white;
+}
+
+#button {
+    background-color: white;
+    color: #DE340D;
+    font-weight: bold;
+    font-size: 18px;
+    font-style: normal;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 3px;
+    cursor: pointer;
+    width: 60%;
+    margin: 50px auto;
+}
+
+#button:hover {
+    background-color: #DE340D;
+    color: white;
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+}
+
+picture {
+    width: 45%;
+}
+
+@media screen and (max-width: 750px) {
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header nav {
+        display: flex;
+        align-items: center;
+    }
+
+    header a {
+        padding: 6px;
+    }
+
+    #log, #reg {
+        padding: 0;
+        margin: 5px;
+        border: none;
+    }
+
+    #log:hover, #reg:hover {
+        color: #DE340D;
+        transition-duration: 0.3s;
+        background-color: #080104;
+    }
+
+    aside {
+        width: 100%;
+        text-align: center;
+    }
+
+    picture {
+        display: none;
+    }
+
+    form {
+        display: block;
+        margin: 0 auto;
+    }
+
+    input {
+        width: 100%;
+    }
+}
+
